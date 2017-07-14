@@ -1,7 +1,8 @@
 **Booky Bootstrap Template**
 ===================
 
-Hello I am Meily Chhon, I designed and developed this html / css template. It is supposed to be for Book Author, however I am sure you could tweak it to your will. I hope you would like it. 
+Hello I am Meily Chhon, I designed and developed this html / css template. 
+It is a Free Responsive Website Template For Book Author, however I am sure you could tweak it to your will. I hope you would like it. 
 
 **This is a preview of the template.**
 ----------
