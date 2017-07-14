@@ -1,0 +1,930 @@
+/*
+* Template Name: Booky 
+* Template Author: Meily Chhon
+* Description: A Multipurpose Single Page Website and Landing Page
+* Email: chhonmeily@gmail.com
+*/
+
+/*
+* The Override Style Here are consist of 19 Section
+* with its own name as listed in this comment here.
+* 1. Start Booky Custom Style 
+* 2. Style for Icon Container
+* 3. Style for Button
+* 4. Style for Header
+* 5. Chapter List 
+* 6. Why You Should Read This Book
+* 7. About The Author
+* 8. Testimonial List
+* 9. Buy The Book Container
+* 10. Preview and Download Sample
+* 11. Footer Style
+* 12. RESPONSIVE CODE
+* *	12.1. Override bootstrap grid css to fix our layout 
+* *	12.2. Screen FULL HD 1080P
+* *	12.3. Screen Size Smaller Than 1200px
+* *	12.4. Screen Size Smaller Than 1024px
+* *	12.5. Screen Size Smaller Than 768px
+* *	12.6. Screen Size Smaller Than 767px
+* *	12.7. Screen Size Smaller Than 480px
+*/
+
+/*
+* 1. Start Booky Custom Style
+* ============================================
+*/
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/open-sans.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-weight: 100;
+}
+
+.booky-bg-color {
+    border: 1px solid #000;
+}
+
+/*
+* 2. Style for Icon Container
+* ============================================
+*/
+
+h1 {
+    font-weight: 100;
+}
+
+.icon-container {
+	border-radius: 100%;
+	padding: 10px;
+	min-width: 128px;
+	min-height: 128px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.icon-container img {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	min-width: 60px;
+	min-height: 60px;
+	margin: 0 auto;
+}
+
+.icon-container i {
+	font-size: 50px;
+	display: inline-block;
+	padding: 18px 0px 0 5px;
+	box-sizing: content-box;
+	text-align: center;
+	color: #000;
+}
+
+/*
+* 3. Style for Button
+* ============================================
+*/
+
+.btn-booky,
+.btn-booky:hover,
+.btn-booky:active,
+.btn-booky:focus {
+    background: #000;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 100;
+    color: #FFF;
+    text-shadow: none;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn-booky:hover {
+	background: #FFF;
+	color: #000;
+}
+
+/* End of style for Button */
+
+/*
+* 4. Style for Header
+* ============================================
+*/
+
+header {
+	background: url(../images/ben-white-131241.jpg) no-repeat;
+	width: 100%;
+	display: block;
+	background-size: 180%;
+	background-position: 50% 40%;
+}
+
+header .navbar-default {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+header .main-menu.bg-white {
+	background: #FFF;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	padding-bottom: 20px;
+	-moz-transition: all 200ms;
+	-webkit-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.navbar .main-top-menu {
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.navbar .main-top-menu li a,
+.navbar .main-top-menu li a:active,
+.navbar .main-top-menu li a:focus  {
+    font-weight: 100;
+    color: #000;
+    line-height: 1;
+}
+
+.navbar .main-top-menu li a:hover {
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    border-bottom: 2px solid #000;
+    transition: all 200ms;
+}
+
+.navbar-header {
+	display: block;
+	float: left;
+}
+
+.navbar-brand {
+	margin: 0 0 0 20px;
+	float: none;
+	display: block;
+	font-size: 2em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand {
+	color: #000000;
+}
+
+.navbar-brand img {
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+header .container-fluid .cta-top-banner {
+    background: none;
+    padding-top: 50px;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.cta-top-banner h1 {
+    line-height: 1;
+    font-weight: 100;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.cta-top-banner p {
+    padding: 0 20%;
+}
+
+.cta-top-banner .btn-buy-our-book {
+	margin: 0 15px 0 0;
+}
+
+header .booky-scroll-down {
+	margin: 0px 0px 20px 0;
+	width: 100%;
+	display: inline-block;
+}
+
+/*EOF Style For Header*/
+
+/*
+* 5. Chapter List 
+* ============================================
+*/
+
+.chapter-list {
+	margin: 30px 0 40px 0;
+}
+
+.chapter-list h2 {
+	margin: 15px 0 40px 0;
+	padding: 0 15%;
+	line-height: 1.5;
+	font-weight: 100;
+    color: #000;
+}
+
+.chapter-box {
+	margin: 15px 0;
+	float: none;
+	display: inline-block;
+	padding: 0 3%;
+}
+
+.chapter-box p {
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.chapter-box h4 {
+    color: #000;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+/*
+* EOF Chapter List 
+*/
+
+/*
+* 6. Why You Should Read This Book
+* ============================================
+*/
+
+.why-read-the-book {
+    background: url(../images/ben-white-131241.jpg) no-repeat;
+    background-size: cover;
+    background-position: 30% 55%;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-read-the-book article {
+    z-index: 1;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    margin-left: 0;
+    padding: 10%;
+}
+
+.bg-shape {
+    background: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 0;
+	width: 75%;
+	height: 100%;
+	display: inline-block;
+	z-index: 0;
+	left: -20%;
+	transform: skew(30deg);
+}
+
+/*
+* EOF Why Read The Book
+*/
+
+/*
+* 7. About The Author
+* ============================================
+*/
+
+.about-the-author {
+	position: relative;
+	overflow: hidden;
+	background: url(../images/people-1842334_1920.jpg) no-repeat;
+	background-size: cover;
+	background-position: 90% 60%;
+	display: block;
+}
+
+.about-the-author .bg-shape {
+	transform: skew(-20deg);
+	position: absolute;
+	bottom: 0;
+	left: unset;
+	right: -20%;
+	width: 75%;
+	height: 100%;
+	z-index: 1;
+}
+
+.about-the-author article {
+    z-index: 1;
+    color: #fff;
+    background: rgba(0,0,0,0.8);
+    margin-left: 0;
+    padding: 10% 8%;
+    color: #FFF;
+}
+
+.social-media-link a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.social-media-link a .booky-icon {
+	width: 26px;
+	height: 26px;
+	margin: 0 5px;
+}
+
+.social-media-link .booky-icon.medium {
+	background: url(../images/medium.svg) no-repeat;
+	display: block;
+	margin-left: 10px
+}
+
+.social-media-link .booky-icon.facebook {
+	background: url(../images/facebook.svg) no-repeat;
+	display: block;
+}
+
+.social-media-link .booky-icon.linkedin {
+	background: url(../images/linkedin.svg) no-repeat;
+	display: block;
+}
+
+.social-media-link .booky-icon.twitter {
+	background: url(../images/twitter.svg) no-repeat;
+	display: block;
+}
+
+.social-media-link .booky-icon.wordpress {
+	background: url(../images/wordpress.svg) no-repeat;
+	display: block;
+}
+
+.social-media-link .booky-icon.youtube {
+	background: url(../images/youtube.svg) no-repeat;
+	display: block;
+}
+
+.why-read-the-book h1.section-title, 
+.about-the-author h1.section-title {
+    color: #FFF;
+}
+
+.section-title {
+    font-weight: 100;
+    margin-bottom: 30px;
+    padding: 0 0;
+    color: #333;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+article p {
+	font-weight: 100;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+/*
+* EOF About The Author
+*/
+
+/*
+* 8. Testimonial List
+* ============================================
+*/
+
+.testimonials-list {
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.testimonial-box {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.avatar-container {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+.testimonial-box .reviewer-name {
+	font-weight: normal;
+}
+
+.testimonial-box .reviewer-job {
+	font-style: italic;
+}
+
+.testimonial-box .testimonial {
+	line-height: 2;
+	color: #000;
+	font-size: small;
+	font-weight: 100;
+	margin-top: 15px;
+}
+
+/*
+* EOF Testimonial List
+*/
+
+/*
+* 9. Buy The Book Container
+* ============================================
+*/
+
+.buy-the-book-container {
+	box-sizing: border-box;
+	height: 100%;
+	display: block;
+	padding: 20px 20px 0px 20px;
+}
+
+.buy-the-book-container .buy-the-book-content .bg-transparent-black {
+	height: auto;
+    display: inline-block;
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+    padding: 0px 20px 20px 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.buy-the-book-container .buy-the-book-content .white-box {
+	background: #FFF;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.buy-the-book-content .white-box .text-blurb {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.buy-the-book-content .icon-container {
+	margin: 25px 20px 10px 0;
+    vertical-align: middle;
+}
+
+.cta-book-content p {
+	margin-bottom: 20px;
+}
+
+.btn-get-book-now,
+.btn-get-book-now:hover,
+.btn-get-book-now:active,
+.btn-get-book-now:focus {
+    background: #000;
+    color: #FFF;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.4);
+}
+
+.btn-get-book-now:active,
+.btn-get-book-now:focus {
+	box-shadow: none;
+}
+
+/*
+* EOF Buy The Book Container
+*/
+
+/*
+* 10. Preview and Download Sample
+* ============================================
+*/
+
+.free-download-container {	
+	background: none;
+}
+
+.free-download-content {
+	padding: 30px 0 40px 0;
+}
+
+.email-subscription-container {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+form[name="email-subscription"] label {
+	font-weight: 100;
+}
+
+
+form[name="email-subscription"] input[type="text"], 
+form[name="email-subscription"] input[type="email"] {
+    border-radius: 0;
+    border: 1px solid #000;
+    box-shadow: none;
+}
+
+.pdf-view-custom {
+	margin-bottom: 30px;
+}
+
+.pdf-view-custom object {
+    display: none;
+    width: 80%;
+    margin: 0 10%;
+    min-height: 300px;
+    max-height: 500px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+/*
+* EOF Preview and Download Sample
+*/
+
+/*
+* 11. Footer Style
+* ============================================
+*/
+
+footer.footer {
+	min-height: 50px;
+	background: #000;
+	padding-bottom: 10px;
+}
+
+footer .navbar-brand {
+    width: unset;
+    color: #FFF;
+    padding: 0px;
+    margin: 15px 0 0 30px;
+    font-weight: 100;
+    font-size: 18px;
+    height: 25px;
+}
+
+.footer .nav.footer-nav li a,
+.footer .nav.footer-nav li a:active,
+.footer .nav.footer-nav li a:focus  {
+    font-weight: 100;
+    color: #FFF;
+    padding: 15px 10px;
+    background: none;
+    font-size: 13px;
+    text-shadow: none;
+}
+
+.footer .navbar-nav {
+	margin: 0;
+}
+
+footer .navbar .nav.footer-nav li a:hover {
+	color: #598527;
+}
+
+/*
+* END OF Footer Style
+* ============================================
+*/
+
+/*End Of Booky Custom Style*/
+
+/*
+* 12. RESPONSIVE CODE 
+* ============================================
+*/
+
+/*
+* 12.1. Override bootstrap grid css to fix our layout 
+* ============================================
+*/
+@media(min-width: 1200px) {
+	.col-lg-4 {
+		width: 33%;
+	}
+}
+
+@media(min-width: 992px) {
+	.col-md-4 {
+		width: 33%;
+	}
+}
+
+@media(min-width: 768px) {
+	.col-sm-4 {
+		width: 33%;
+	}
+}
+
+/*
+* End of override
+* ============================================
+*/
+
+/*
+* 12.2. Screen FULL HD 1080P
+* ============================================
+*/
+
+@media(min-width: 1400px) { 
+	
+	header { 
+		background-size: 120%;
+		background-position: 0 -390px;
+	}
+
+	.chapter-box {
+		padding: 0 5%;
+	}
+
+}
+
+/*END OF Screen FULL HD 1080P*/
+
+/*
+* 12.3. Screen Size Smaller Than 1200px
+* ============================================
+*/
+
+@media(max-width: 1199px) {
+
+	.navbar-brand {
+		font-size: 15px;
+	}
+
+	.navbar-brand img {
+		width: 30px;
+	}
+
+	header .navbar-nav.main-top-menu>li>a {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.btn-download-pdf,
+	.btn-download-pdf:hover,
+	.btn-download-pdf:active,
+	.btn-download-pdf:focus,
+	.btn-get-book-now, 
+	.btn-get-book-now:hover, 
+	.btn-get-book-now:active, 
+	.btn-get-book-now:focus {
+		font-size: 1.1em;
+	}
+
+	.footer .navbar-brand {
+	    line-height: 25px;
+	    margin: 0;
+	}
+
+	.footer .navbar-nav.footer-nav {
+	    float: none;
+	    margin: 0;
+	    padding: 5px 0;
+	}
+
+	.footer .navbar-nav.footer-nav>li {
+		float: none;
+		display: inline-block;
+	}
+
+	.footer .nav.footer-nav li a, 
+	.footer .nav.footer-nav li a:active, 
+	.footer .nav.footer-nav li a:focus {
+		padding: 5px 10px;
+	}
+
+}
+
+/*END OF Screen Size Smaller Than 1200px*/
+
+/*
+* 12.4. Screen Size Smaller Than 1024px
+* ============================================
+*/
+@media(max-width: 1024px){ 
+	
+	.cta-top-banner {
+		margin-top: 40px;
+	}
+
+	.navbar-brand {
+		margin: 5px 0 0 0px; 
+	}
+
+	.navbar .main-top-menu {
+		margin-right: 0;
+		margin-top: 5px;
+	}
+
+}
+
+/*END OF Screen Size Smaller Than 1024px*/
+
+/*
+* 12.5. Screen Size Smaller Than 768px
+* ============================================
+*/
+
+@media(max-width: 768px){
+
+	.navbar-header {
+		margin-top: 0px;
+	}
+	
+	header .navbar-nav.main-top-menu>li>a {
+		padding-left: 8px;
+		padding-right: 8px;
+		font-size: 12px;
+	}
+
+	.buy-the-book-content .text-blurb h1 {
+		font-size: 28px;
+	}
+
+	.footer .navbar-brand {
+		font-size: 15px;
+		min-height: 35px;
+	}
+
+}
+
+/*EOF Screen Size Smaller Than 768px*/
+
+
+/*
+* 12.6. Screen Size Smaller Than 767px
+* ============================================
+*/
+
+@media(max-width: 767px){
+	
+	header {
+		background-size: cover;
+	}
+
+	header .navbar-default {
+		background: #FFF;
+	}
+
+	header .main-menu.bg-white {
+		padding-bottom: 0;
+	}
+	
+	header .container-fluid .cta-top-banner {
+		margin-top: 5%;
+	}
+
+	.cta-top-banner h1 {
+		margin-bottom: 0;
+	}
+
+	.cta-top-banner p {
+		padding: 0 0;
+	}
+
+	.navbar .main-top-menu {
+		float: none !important;
+		margin: 0;
+	}
+
+	#main-menu {
+		width: 100%;
+	}
+	
+	.navbar-brand {
+		margin-left: 0;
+		padding-top: 5px;
+	}
+
+	.cta-top-banner .btn-booky {
+		margin: 0 0 10px 0;
+	}
+
+	.chapter-list {
+		margin: 0;
+	}
+
+	.chapter-list h2 {
+		margin: 15px 0 10px 0;
+	}
+
+	.why-read-the-book {
+		background-size: cover;
+		background-position: 100%; 
+	}
+
+	.buy-the-book-content .icon-container {
+	    display: block;
+	    margin: 15px auto;
+	    width: 120px;
+	    text-align: center;
+	    box-sizing: border-box;
+	    height: 120px;
+	    float: none !important;
+	}
+	
+	.buy-the-book-content .text-blurb h1 {
+		width: 100%;
+		display: inline-block;
+		margin: 0 0 10px 0;
+		text-align: center;
+	}
+
+	.buy-the-book-content .text-blurb p {
+		text-align: center;
+	} 
+	
+	.social-media-link a .booky-icon {
+		margin: 0 5px;
+	}
+
+}
+
+/*END OF Screen Size Smaller Than 767px*/
+
+/*
+* 12.7. Screen Size Smaller Than 480px
+* ============================================
+*/
+
+@media(max-width: 480px) {
+
+	header .container-fluid .cta-top-banner {
+		margin-top: 10%;
+	}
+
+	.why-read-the-book {
+		background-size: cover;
+		background-position: 55% 0%;
+	}
+
+	.why-read-the-book article,
+	.about-the-author article {
+		margin-top: 0;
+	}
+
+	.section-title {
+		margin-bottom: 15px;
+		line-height: 1.3em;
+		  font-size: 20px;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	.social-media-link span {
+		margin: 0 0 15px 0;
+		width: 100%;
+		display: inline-block;
+	}
+
+	.about-the-author .bg-shape,
+	.bg-shape {
+		transform: none;
+		width: 100%;
+		left: 0;
+	}
+
+	.testimonials-list {
+		padding: 0;
+	}
+
+	.pdf-view-custom object {
+		min-height: 200px;
+		max-height: 200px;
+		display: none;
+	}
+
+	embed {
+		width: 100%;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.buy-the-book-content .icon-container {
+		display: block;
+	}
+
+}
+
+/*END OF Screen Size Smaller Than 480px*/
+
+/*
+* END OF RESPONSIVE CODE 
+*/

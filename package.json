@@ -1,0 +1,16 @@
+{
+  "name": "booky",
+  "version": "1.0.0",
+  "description": "Bootstrap 3 Template\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Landing Page\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DMulti Purpose Boostrap Landing Page Template",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Meily Chhon",
+  "dependencies": {
+    "connect": "^3.6.2",
+    "jquery.scrollto": "^2.1.2",
+    "serve-static": "^1.12.3"
+  }
+}
